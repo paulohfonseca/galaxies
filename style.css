@@ -69,13 +69,16 @@ main .card {
     padding: 2.4rem 3.2rem 3.2rem;
 }
 
-@media (max-width: 768px) {
-    header {
-        max-width: 37rem;
-    }
-
+@media (max-width: 1024px) {
     main {
-        grid-template-columns: repeat(2, 30rem);
+        grid-template-columns: repeat(2, 37rem);
+        gap: 4.8rem 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 34rem);
         gap: 4.8rem 3rem;
     }
 }
@@ -83,6 +86,10 @@ main .card {
 @media (max-width: 500px) {
     :root {
         font-size: 55%;
+    }
+
+    header {
+        max-width: 37rem;
     }
 
     main {
